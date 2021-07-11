@@ -4,7 +4,7 @@
   <b-navbar toggleable="lg" type="dark" variant="info">
     <b-navbar-brand :to="{name: 'home'}">
       <img style="border-radius:20px" src="https://placekitten.com/g/30/30" alt="Kitten">
-      MyApp
+      MyAppJob
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
