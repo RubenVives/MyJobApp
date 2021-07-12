@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'ce7b0df6e549211d8ecdd37144140510fdf18197',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -374,12 +374,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'ce7b0df6e549211d8ecdd37144140510fdf18197',
             'dev_requirement' => false,
         ),
         'laravel/tinker' => array(
@@ -753,12 +753,12 @@
             ),
         ),
         'scrivo/highlight.php' => array(
-            'pretty_version' => 'v9.18.1.6',
-            'version' => '9.18.1.6',
+            'pretty_version' => 'v9.18.1.7',
+            'version' => '9.18.1.7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../scrivo/highlight.php',
             'aliases' => array(),
-            'reference' => '44a3d4136edb5ad8551590bf90f437db80b2d466',
+            'reference' => '05996fcc61e97978d76ca7d1ac14b65e7cd26f91',
             'dev_requirement' => true,
         ),
         'sebastian/code-unit-reverse-lookup' => array(

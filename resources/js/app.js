@@ -22,6 +22,7 @@ window.Vue = require('vue');
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('app', require('./components/AppComponent.vue').default);
 Vue.component('posts', require('./components/PostComponent.vue').default);
+Vue.component('login', require('./components/LoginComponent.vue').default);
 Vue.component('InfinitiLoading', require('vue-infinite-loading').default);
 
 /** @VARIBALES GLOBALES */
