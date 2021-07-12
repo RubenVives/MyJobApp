@@ -24,6 +24,12 @@ Vue.component('app', require('./components/AppComponent.vue').default);
 Vue.component('posts', require('./components/PostComponent.vue').default);
 Vue.component('InfinitiLoading', require('vue-infinite-loading').default);
 
+/** @VARIBALES GLOBALES */
+//dominio de la app ** IMPORTANTE CAMBIAR EN PRODUCCION **
+Vue.prototype.$URL_APP = "http://127.0.0.1:8000/";
+/** @END VARIBALES GLOBALES */
+
+import Vue from 'vue';
 import router from './routes'
 
 /**

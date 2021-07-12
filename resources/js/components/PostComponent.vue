@@ -28,12 +28,14 @@ export default {
     return {
       list: [],
       page: 0,
+      URL_APP: "",
     };
   },
   methods: {
     infiniteHandler($state) {
       this.page++;
-      let url = "http://127.0.0.1:8000/api/posts?page=" + this.page;
+      let URL_APP = this.$URL_APP;
+      let url = URL_APP + "api/posts?page=" + this.page;
       axios.get(url).then((response) => {
         let posts = response.data.data;
         if (posts.length) {

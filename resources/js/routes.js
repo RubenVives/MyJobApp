@@ -18,6 +18,12 @@ export default new Router({
 
         },
         {
+            path: '/login',
+            name: 'login',
+            component: require('./views/Login').default
+
+        },
+        {
             path: '/post/:slug',
             name: 'post',
             component: require('./views/Post').default,
