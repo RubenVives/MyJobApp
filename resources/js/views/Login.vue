@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="section">
-      <div class="container">
+      <div class="container card my-3">
         <div class="row">
-          <div class="container container--mini my-3 w-50" >
+          <div class="container card-body container--mini my-3 w-50">
             <img
               class="img-fluid mx-auto d-block mb-5"
               src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/elements/bootstrap-logo.svg"
@@ -16,7 +16,7 @@
               method="post"
             >
               <div class="form-group">
-                <label for="user_login">Email</label>
+                <label for="user_login">Correo Electrónico</label>
                 <input
                   type="text"
                   name="log"
@@ -27,11 +27,11 @@
                 />
               </div>
               <div class="form-group">
-                <label for="user_pass">Password</label>
+                <label for="user_pass">Contraseña</label>
                 <a
-                  class="form-sublink"
+                  class="form-sublink float-right"
                   href="https://themes.getbootstrap.com/my-account/lost-password/"
-                  >Forgot password?</a
+                  >¿ Olvidaste la contraseña ?</a
                 >
                 <input
                   type="password"
@@ -40,6 +40,7 @@
                   class="form-control"
                   value=""
                   size="20"
+                  placeholder="*********"
                 />
               </div>
 
@@ -60,7 +61,7 @@
                   name="wp-submit"
                   id="wp-submit"
                   class="btn btn-brand btn-block mb-4"
-                  value="Sign In"
+                  value="Entrar"
                 />
                 <input
                   type="hidden"
@@ -70,8 +71,10 @@
               </div>
             </form>
             <p class="small text-center text-gray-soft">
-              Don't have an account yet?
-              <a href="https://themes.getbootstrap.com/my-account/">Sign up</a>
+              ¿ No tienes cuenta ?
+              <a href="https://themes.getbootstrap.com/my-account/"
+                >Registrate</a
+              >
             </p>
           </div>
         </div>
@@ -81,9 +84,14 @@
 </template>
 
 <style>
-    @media screen and (max-width:991px) {
-        div#app .section .container{ 
-            width: 100% !important ;
-        }        
-    }
+.btn.btn-brand.btn-block {
+  background: #7952b3;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+  div#app .section .container {
+    width: 100% !important ;
+  }
+}
 </style>
