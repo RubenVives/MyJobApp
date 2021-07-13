@@ -18,7 +18,7 @@
                     <p v-text="post.excerpt"></p>
                     <div v-html="post.body"></div>
                     <hr>
-                    <h1 class="display-4">Otros artículos</h1>
+                    <h1 class="display-4">Otros artículos nuevos</h1>
 
                     <posts></posts>
                 </div>

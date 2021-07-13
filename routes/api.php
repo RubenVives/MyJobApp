@@ -18,5 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('posts' , 'PostController@index');
-Route::get('post/{slug}' , 'PostController@showPost');
+Route::get('posts', 'PostController@index');
+Route::get('post/{slug}', 'PostController@showPost');
+
+/******************************************  
+ ************* APIS USUARIOS ************** 
+ ******************************************/
+Route::post('loginUser', 'UsuariosController@loginUsuario');
