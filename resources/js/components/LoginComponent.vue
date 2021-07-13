@@ -82,7 +82,6 @@ export default {
     logearUsuario() {
       let URL_APP = this.$URL_APP;
       let url = URL_APP + "api/loginUser";
-      alert(url);
       axios.post(url).then((response) => {
         console.info(response.data);
       });

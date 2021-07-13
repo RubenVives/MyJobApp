@@ -22,8 +22,9 @@ class UsuariosCommand
         $this->usuariosRepository = $usuariosRepository;
     }
 
-    public function AltaUsuariosRepository($datos)
+    public function AltaUsuarios($datos)
     {
         # code...
+        return $datos;
     }
 }
