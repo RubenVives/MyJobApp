@@ -12,7 +12,7 @@
             <form name="loginform" id="loginform" @submit.prevent>
               <div class="form-group">
                 <label for="user_login">
-                <i class="fa fa-envelope mr-1"></i>Correo Electrónico
+                  <i class="fa fa-envelope mr-1"></i>Correo Electrónico
                 </label>
                 <input
                   type="text"
@@ -82,9 +82,8 @@ export default {
     logearUsuario() {
       let URL_APP = this.$URL_APP;
       let url = URL_APP + "api/loginUser";
-
+      alert(url);
       axios.post(url).then((response) => {
-        alert(url);
         console.info(response.data);
       });
     },

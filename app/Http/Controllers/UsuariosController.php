@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Usuarios;
+use app\UsuariosModel;
 use Facade\FlareClient\Http\Response;
 
 class UsuariosController extends Controller
@@ -11,14 +11,14 @@ class UsuariosController extends Controller
     //
     protected $UsuarioModel;
 
-    public function __construct()
+    public function __construct(UsuariosModel $UsuarioModel)
     {
-        $this->UsuarioModel = Usuarios::class;
+        $this->UsuarioModel = $UsuarioModel;
     }
 
     public function loginUsuario(Request $request)
     {
-
+        die('$this->UsuarioModel');
         $array = [
             "name" => "ruben",
             "apellidos" => "vives"
