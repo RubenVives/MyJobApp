@@ -3,26 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Usuarios;
+use App\UsuariosModel;
+use Facade\FlareClient\Http\Response;
+use App\Http\Commands\UsuariosCommand;
+
+use Faker\Provider\es_ES\PhoneNumber;
+use Faker\Generator as Faker;
 
 class UsuariosController extends Controller
 {
     //
     protected $UsuarioModel;
-    
-    public function __construct()
+    protected $UsuariosCommand;
+
+    public function __construct(UsuariosModel $UsuarioModel,UsuariosCommand $UsuariosCommand )
     {
-        $this->UsuarioModel = Usuarios::class;  
+        
+        $this->UsuarioModel = $UsuarioModel;
+        $this->UsuariosCommand = $UsuariosCommand;
     }
 
-    public function loginUsuario(Request $request){
-        die('hola');
+    public function loginUsuario(Request $request, Faker $faker, PhoneNumber $phoneNumber)
+    {
+        $number = $phoneNumber->phoneNumber();
+        die($number);
+        $dato = $this->UsuariosCommand->AltaUsuarios('AltaUsuariosRepository');
+        die($dato);
         $array = [
             "name" => "ruben",
             "apellidos" => "vives"
         ];
-        $data = response()->json($request->all());
-        die($data);
-        return Request()->json($array);
+        //$data = response()->json($request->all());
+        return Response()->json(json_encode($array));
     }
 }
