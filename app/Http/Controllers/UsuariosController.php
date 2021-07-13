@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\UsuariosModel;
+use App\Models\UsuariosModel;
 use Facade\FlareClient\Http\Response;
 use App\Http\Commands\UsuariosCommand;
 

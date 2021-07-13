@@ -7,9 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Direcciones' => $baseDir . '/app/Direcciones.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Commands\\UsuariosCommand' => $baseDir . '/app/Http/Commands/UsuariosCommand.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\DireccionesController' => $baseDir . '/app/Http/Controllers/DireccionesController.php',
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
     'App\\Http\\Controllers\\UsuariosController' => $baseDir . '/app/Http/Controllers/UsuariosController.php',
     'App\\Http\\Interfaces\\UsuarioInterface' => $baseDir . '/app/Http/Interfaces/UsuarioInterface.php',
@@ -157,6 +159,7 @@ return array(
     'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
     'DeepCopy\\TypeFilter\\TypeFilter' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
     'DeepCopy\\TypeMatcher\\TypeMatcher' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+    'DireccionesSeeder' => $baseDir . '/database/seeds/DireccionesSeeder.php',
     'Doctrine\\Common\\Lexer\\AbstractLexer' => $vendorDir . '/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php',
     'Doctrine\\Inflector\\CachedWordInflector' => $vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
     'Doctrine\\Inflector\\GenericLanguageInflectorFactory' => $vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php',
