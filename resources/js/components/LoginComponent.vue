@@ -85,7 +85,7 @@ export default {
 
       axios.post(url).then((response) => {
         alert(url);
-        console.info(response);
+        console.info(response.data);
       });
     },
   },
