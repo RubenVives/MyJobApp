@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,7 @@ Route::view('acerca-de' , 'about')->name('about');
 Route::view('blog' , 'blog')->name('blog.index');
 Route::get('blog/{post:slug}' , 'PostController@show')->name('blog.show');
 Route::view('contactos' , 'contact')->name('contact');*/
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

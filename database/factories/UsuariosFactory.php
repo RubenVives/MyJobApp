@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\UsuariosModel;
+use App\Models\UsuariosModel;
 use Faker\Provider\es_ES\PhoneNumber;
 use Faker\Generator as Faker;
 use Faker\Generator;

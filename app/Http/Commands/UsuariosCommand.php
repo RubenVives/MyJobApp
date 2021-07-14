@@ -8,7 +8,7 @@
 
 namespace App\Http\Commands;
 
-use App\UsuariosModel;
+use App\Models\UsuariosModel;
 use App\Http\Repository\UsuariosRepository;
 
 class UsuariosCommand

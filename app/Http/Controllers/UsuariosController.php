@@ -7,28 +7,23 @@ use App\Models\UsuariosModel;
 use Facade\FlareClient\Http\Response;
 use App\Http\Commands\UsuariosCommand;
 
-use Faker\Provider\es_ES\PhoneNumber;
-use Faker\Generator as Faker;
-
 class UsuariosController extends Controller
 {
     //
     protected $UsuarioModel;
     protected $UsuariosCommand;
 
-    public function __construct(UsuariosModel $UsuarioModel,UsuariosCommand $UsuariosCommand )
+    public function __construct(UsuariosModel $UsuarioModel, UsuariosCommand $UsuariosCommand)
     {
-        
+
         $this->UsuarioModel = $UsuarioModel;
         $this->UsuariosCommand = $UsuariosCommand;
     }
 
-    public function loginUsuario(Request $request, Faker $faker, PhoneNumber $phoneNumber)
+    public function loginUsuario(Request $request)
     {
-        $number = $phoneNumber->phoneNumber();
-        die($number);
+        die('hola');
         $dato = $this->UsuariosCommand->AltaUsuarios('AltaUsuariosRepository');
-        die($dato);
         $array = [
             "name" => "ruben",
             "apellidos" => "vives"
